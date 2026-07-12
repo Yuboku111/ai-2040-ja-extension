@@ -1,0 +1,22 @@
+:root {
+  --serif: "Noto Serif JP", "Yu Mincho", "Hiragino Mincho ProN", serif !important;
+  --sans: "Noto Sans JP", "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif !important;
+}
+
+#dialog {
+  line-height: 1.7 !important;
+  word-break: normal;
+  overflow-wrap: anywhere;
+}
+
+#namelabel,
+.menu,
+.choice-btn,
+#inscription,
+#volayer {
+  font-feature-settings: "palt" 1;
+}
+
+#title .byline {
+  letter-spacing: 0.12em !important;
+}

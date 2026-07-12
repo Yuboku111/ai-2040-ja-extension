@@ -1,0 +1,30 @@
+name: 翻訳の改善
+description: 誤訳や不自然な日本語を報告します
+title: "[Translation]: "
+labels: [translation]
+body:
+  - type: textarea
+    id: source
+    attributes:
+      label: 英語原文
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: 現在の日本語訳
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 提案する日本語訳
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: 登場箇所
+      description: チャプター、話者、直前の文章など
+    validations:
+      required: true

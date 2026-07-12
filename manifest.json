@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "AI 2040 Visual Novel 日本語化",
+  "description": "ai-2040.fun のシナリオと操作画面を日本語化します。",
+  "version": "0.1.0",
+  "minimum_chrome_version": "111",
+  "content_scripts": [
+    {
+      "matches": ["https://ai-2040.fun/*", "https://www.ai-2040.fun/*"],
+      "js": ["data/script-ja.js", "content/main.js"],
+      "css": ["content/japanese.css"],
+      "run_at": "document_start",
+      "world": "MAIN"
+    }
+  ]
+}
